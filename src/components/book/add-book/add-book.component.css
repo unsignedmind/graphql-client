@@ -1,0 +1,59 @@
+.add-book {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	bottom: 0;
+	width: 60%;
+	height: 130px;
+	background-color: #9A2525;
+}
+
+.add-book__field {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 30px 10px 10px 10px;
+}
+
+.add-book__field input, .add-book__field select  {
+	z-index: 2;
+	padding-left: 5px;
+	border: 0;
+	border-radius: 5px;
+	width: 160px;
+	height: 25px;
+}
+
+.add-book button {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	margin-left: 30px;
+	border: 0px;
+	border-radius: 50%;
+	background-color: #fff;
+	appearance: none;
+}
+
+.add-book__field label {
+	position: absolute;
+	top: -20px;
+	z-index: 1;
+	width: 110px;
+	height: 20px;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+}
+
+.add-book__plus {
+	position: absolute;
+	width: 52px;
+	height: 52px;
+}

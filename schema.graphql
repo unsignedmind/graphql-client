@@ -1,0 +1,32 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: RootQueryType
+    mutation: Mutation
+}
+
+type Author {
+    age: Int
+    books: [Book]
+    id: ID
+    name: String
+}
+
+type Book {
+    author: Author
+    genre: String
+    id: ID
+    name: String
+}
+
+type Mutation {
+    addAuthor(age: Int!, name: String!): Author
+    addBook(authorId: ID!, genre: String!, name: String!): Book
+}
+
+type RootQueryType {
+    author(id: ID): Author
+    authors: [Author]
+    book(id: ID): Book
+    books: [Book]
+}
